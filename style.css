@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
 html, body{
 		display: flex;
 		flex-direction: column;
@@ -8,8 +10,8 @@ html, body{
 		background: #251f31;
 }
 .box{
-    font-family: 'Montserrat', sans-serif;
     text-align: center;
+		font-family: 'Montserrat', sans-serif;
     font-size: 33px;
 		color: #e58156;
     width: 100%;
