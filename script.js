@@ -1,5 +1,6 @@
+let array = [];
+
 function CreateArr(){
-  array = [];
   let string = ' ';
   let show_array = document.querySelector(".arr");
   for (var i = 0; i < 10; i++) {
