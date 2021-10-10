@@ -2,7 +2,7 @@ function CreateArr(){
   array = [];
   let string = ' ';
   let show_array = document.querySelector(".box");
-  for (var i = 0; i < 15; i++) {
+  for (var i = 0; i < 10; i++) {
       array.push(Math.round(Math.random() * 50-10))
       string += ' [' + array[i] + '] ';
   }
@@ -10,8 +10,8 @@ function CreateArr(){
   return 0;
 }
 
-function FineElement(){
-    var element = prompt("Введіть елемент, який Ви хочете знайти в масиві:");
+function FindElement(){
+    let element = prompt("Введіть елемент, який Ви хочете знайти в масиві:");
     element = parseInt(element);
     for (var i = 0; i < array.length; i++) {
       if (array[i] == element){

@@ -1,27 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 
 html, body{
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		min-height: 100vh;
-		margin: 0;
-		background: #251f31;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	margin: 0;
+	background: #251f31;
 }
 .box{
-    text-align: center;
-		font-family: 'Montserrat', sans-serif;
-    font-size: 33px;
-		color: #e58156;
-    width: 100%;
-    margin-bottom: 10px;
-		word-spacing: 50px;
+  text-align: center;
+	font-family: 'Montserrat', sans-serif;
+  font-size: 33px;
+	color: #e58156;
+  width: 100%;
+  margin-bottom: 15px;
+	word-spacing: 50px;
 }
 .buttons{
 	display: flex;
 	justify-content: center;
-	align-items: center;
 }
 .button{
 	cursor: pointer;
@@ -33,10 +32,10 @@ html, body{
   color: #e58156;
   border: 1px solid #44147d;
   background: none;
-  font-weight: 300;
+  font-weight: 600;
+	font-size: 17px;
   font-family: 'Montserrat', sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 2px;
+  letter-spacing: 1.5px;
 }
 .button:before, .button:after{
   content: "";
@@ -47,6 +46,7 @@ html, body{
   box-sizing: border-box;
 }
 .button:before{
+	content: "";
   bottom: 0;
   left: 0;
   border-left: 1px solid #7300fb;
@@ -54,6 +54,7 @@ html, body{
   transition: 0s ease opacity .8s, .2s ease width .4s, .2s ease height .6s;
 }
 .button:after {
+	content: "";
   top: 0;
   right: 0;
   border-right: 1px solid #7300fb;
@@ -61,17 +62,20 @@ html, body{
   transition: 0s ease opacity .4s, .2s ease width, .2s ease height .2s;
 }
 .button:hover:before,
-.button:hover:after {
+.button:hover:after{
+	content: "";
   height: 100%;
   width: 100%;
   opacity: 1;
 }
-.button:hover:before {
+.button:hover:before{
+	content: "";
   transition: 0s ease opacity 0s, .2s ease height, .2s ease width .2s;
 }
-.button:hover:after {
+.button:hover:after{
+	content: "";
   transition: 0s ease opacity .4s, .2s ease height .4s, .2s ease width .6s;
 }
-.button:hover {
+.button:hover{
   background: #3f2c59;
 }
