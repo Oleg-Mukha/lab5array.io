@@ -9,7 +9,7 @@ html, body{
 	margin: 0;
 	background: #251f31;
 }
-.box{
+.arr{
   text-align: center;
 	font-family: 'Montserrat', sans-serif;
   font-size: 33px;
@@ -32,8 +32,8 @@ html, body{
   color: #e58156;
   border: 1px solid #44147d;
   background: none;
-  font-weight: 600;
-	font-size: 17px;
+  font-weight: 500;
+	font-size: 14px;
   font-family: 'Montserrat', sans-serif;
   letter-spacing: 1.5px;
 }
