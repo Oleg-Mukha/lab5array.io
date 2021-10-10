@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 
-html, body{
+ body{
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -22,60 +22,39 @@ html, body{
 	display: flex;
 	justify-content: center;
 }
-.button{
+.button {
 	cursor: pointer;
-  text-decoration: none;
-  display: inline-block;
-  padding: 20px 30px;
-  margin: 10px 20px;
-  position: relative;
   color: #e58156;
-  border: 1px solid #44147d;
-  background: none;
-  font-weight: 500;
-	font-size: 14px;
+  display: inline-block;
+  position: relative;
+  padding: 15px 30px;
+  border: 1px solid #47007b;
+  margin: 10px 20px;
+	height: 60px;
+	background-color: #251f31;
   font-family: 'Montserrat', sans-serif;
-  letter-spacing: 1.5px;
+	font-size: 15px;
+  overflow: hidden;
+  letter-spacing: 1px;
+  transition: .8s cubic-bezier(.165, .84, .44, 1);
 }
-.button:before, .button:after{
+.button:before {
   content: "";
   position: absolute;
-  width: 0;
-  height: 0;
-  opacity: 0;
-  box-sizing: border-box;
-}
-.button:before{
-	content: "";
-  bottom: 0;
   left: 0;
-  border-left: 1px solid #7300fb;
-  border-top: 1px solid #7300fb;
-  transition: 0s ease opacity .8s, .2s ease width .4s, .2s ease height .6s;
-}
-.button:after {
-	content: "";
   top: 0;
-  right: 0;
-  border-right: 1px solid #7300fb;
-  border-bottom: 1px solid #7300fb;
-  transition: 0s ease opacity .4s, .2s ease width, .2s ease height .2s;
-}
-.button:hover:before,
-.button:hover:after{
-	content: "";
-  height: 100%;
+  height: 0;
   width: 100%;
-  opacity: 1;
+  z-index: -1;
+  background-color: #402458;
+  transition: .8s cubic-bezier(.165, .84, .44, 1);
 }
-.button:hover:before{
-	content: "";
-  transition: 0s ease opacity 0s, .2s ease height, .2s ease width .2s;
+.button:hover {
+	border: 1px solid #7e00f7;
+  background: rgba(255, 255, 255, 0);
 }
-.button:hover:after{
-	content: "";
-  transition: 0s ease opacity .4s, .2s ease height .4s, .2s ease width .6s;
-}
-.button:hover{
-  background: #3f2c59;
+.button:hover:before {
+  bottom: 0%;
+  top: auto;
+  height: 100%;
 }
